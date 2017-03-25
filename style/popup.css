@@ -1,3 +1,21 @@
 body {
-    color:#ccc;
-}
+  border-top: 20px solid #ff0000;
+  margin: 0px; }
+
+.container {
+  width: 300px;
+  box-sizing: border-box;
+  padding: 0 10px 10px 10px; }
+  .container h1 {
+    color: #000080; }
+
+.button {
+  overflow: hidden; }
+  .button label {
+    float: left;
+    margin-top: 1px;
+    margin-left: 2px; }
+  .button input[type=checkbox] {
+    float: left; }
+
+/*# sourceMappingURL=popup.css.map */

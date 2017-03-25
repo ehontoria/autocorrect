@@ -7,3 +7,6 @@
 *.iml
 out
 gen
+
+style/.sass-cache
+style/popup.css.map

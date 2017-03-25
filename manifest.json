@@ -1,15 +1,15 @@
 {
-  "manifest_version": 2,
-  "name": "Fluff You Autocorrect",
-  "version": "1.0",
-  
-  "description": "Fluff you autocorrect, hackbeanpot 2017",
+    "manifest_version": 2,
+    "name": "Fluff You Autocorrect",
+    "version": "1.0",
 
-  "browser_action": {
-    "default_icon": "images/fluff.png",
-    "default_title": "Fluff you autocorrect",
-    "default_popup": "html/popup.html"
-  },
+    "description": "Fluff you autocorrect, hackbeanpot 2017",
 
-  "permissions": [ "activeTab" ]
+    "browser_action": {
+        "default_icon": "images/fluff.png",
+        "default_title": "Fluff you autocorrect",
+        "default_popup": "html/popup.html"
+    },
+
+    "permissions": ["activeTab"]
 }
