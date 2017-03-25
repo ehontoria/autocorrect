@@ -8,5 +8,6 @@
 out
 gen
 
+# Sass files
 style/.sass-cache
 style/popup.css.map
