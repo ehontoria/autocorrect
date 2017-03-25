@@ -1,0 +1,9 @@
+body {
+  font-family: calibri; }
+
+.text {
+  padding: 20px 0; }
+  .text input[type="textarea"] {
+    height: 40px; }
+
+/*# sourceMappingURL=style.css.map */
