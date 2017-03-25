@@ -1,14 +1,17 @@
-chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+//content.js
+
+chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
     if (message.action === "hi") {
 
-        var input = document.getElementsByTagName('input');
-        
-        console.log(input);
+        var inputs = document.getElementsByTagName('input');
 
-        for (var i = 0; i < input.length; i++) {
-            if (input[i].type === 'text' || input[i].type === 'textArea') {
-                input[i].addEventListener('change', function (event) {
-                    console.log(event.target.value);
+        for (var i = 0; i < inputs.length; i++) {
+            if (inputs[i].type === 'text' || inputs[i].type === 'textArea') {
+                inputs[i].addEventListener('change', function (event) {
+                    var value = event.target.value;
+                    chrome.runtime.sendMessage({
+                        "text": value
+                    });
                 });
             }
         }
