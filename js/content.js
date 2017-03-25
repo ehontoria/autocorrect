@@ -14,6 +14,8 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
                         "text": value
                     }, {}, function(response) {
                         console.log(response);
+                        
+                        event.target.value = response;
                     });
                 });
             }

@@ -14,7 +14,7 @@ $.getJSON("../utilities/results.json", function(data) {
         var replacements = [];
     
         for (var i = 0; i < textSplit.length; i++) {
-            var word = textSplit[i];
+            var word = textSplit[i].toLowerCase();
             if (swears.includes(word)) {
                 var startsWith = word.charAt(0);
                 var repArray = dict[startsWith];
@@ -22,7 +22,7 @@ $.getJSON("../utilities/results.json", function(data) {
                 var randomIdx = Math.floor(Math.random() * repArray.length);
                 var newWord = repArray[randomIdx];
                 
-                textSplit[i] = newWord;
+                textSplit[i] = newWord.toLowerCase();
     
 //                replacements.push({
 //                    "swear": word,
@@ -32,8 +32,17 @@ $.getJSON("../utilities/results.json", function(data) {
         }
         
         console.log(textSplit);
+        var finalString = "";
+        
+        textSplit.map(function(currentValue, index, array) {
+            finalString += currentValue + " ";
+        })
+        
+        finalString = finalString.substr(0, finalString.length - 1);
+        
+        console.log(finalString);
 
-        sendResponse(replacements);
+        sendResponse(finalString);
     });
 })
 
