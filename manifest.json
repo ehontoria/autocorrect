@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Fluff You Autocorrect",
+  "version": "1.0"
+
+  "default_locale": "en",
+  "description": "Fluff you autocorrect, hackbeanpot 2017",
+
+  "browser_action": {
+    "default_icon": "images/fluff.png",
+    "default_title": "Fluff you autocorrect",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [ "activeTab" ]
+}
