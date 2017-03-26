@@ -9,9 +9,9 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
         var inputs = inputEls.concat(textareas);
         for (var i = 0; i < inputs.length; i++) {
             if ((inputs[i].type === 'text' || inputs[i].type === 'textarea')) {
-                inputs[i].addEventListener('input', function (event) {
+                inputs[i].addEventListener('keyup', function (event) {
                     var value = event.target.value;
-                    if (value.substring(value.length - 1) === ' ') {
+                    if (event.keyCode === 13 || event.keyCode === 32) {
                         // console.log(value);
                         chrome.runtime.sendMessage({
                             "text": value
