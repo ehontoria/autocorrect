@@ -3,6 +3,9 @@ body {
   body h2 {
     text-align: center; }
 
+.material-icons a {
+  color: #fff; }
+
 nav ul.right {
   padding-right: 20px; }
 nav a.brand-logo {
@@ -14,10 +17,12 @@ nav a.brand-logo {
 #titlearea {
   text-align: center; }
   #titlearea .col {
-    padding: 100px 0; }
-  #titlearea h1, #titlearea h2 {
+    padding: 100px 10px; }
+  #titlearea h1, #titlearea h4 {
     text-align: center;
     color: #e0f2f1; }
+  #titlearea a {
+    color: #fff; }
 
 #about .col {
   padding-bottom: 50px; }
