@@ -1,9 +1,5 @@
 body {
     font-family:roboto;
-    
-    h2 {
-        text-align:center;
-    }
 }
 
 .material-icons a {
@@ -48,6 +44,12 @@ nav {
 }
 
 #install {
+    
+    h3 {
+        text-align:center;
+        padding-top:30px;
+    }
+    
     .col {
         padding-bottom:30px;
     }
@@ -58,11 +60,22 @@ nav {
     }
     
     #demo {
-        padding:50px 0;
-        
-        input {
-            width:50%;
+        color:#fff;
+        padding:50px;
+    
+        input[type=text] {
+            border-bottom: 1px solid #fff;
             font-size:30px;
+        }
+
+        .input-field {
+            width:75%;
+            margin:auto;
+            label {
+                color:#fff;
+                text-align: left;
+                opacity:0.5;
+            }
         }
     }
 }

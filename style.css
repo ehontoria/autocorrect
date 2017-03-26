@@ -1,7 +1,5 @@
 body {
   font-family: roboto; }
-  body h2 {
-    text-align: center; }
 
 .material-icons a {
   color: #fff; }
@@ -27,16 +25,27 @@ nav a.brand-logo {
 #about .col {
   padding-bottom: 50px; }
 
+#install h3 {
+  text-align: center;
+  padding-top: 30px; }
 #install .col {
   padding-bottom: 30px; }
 #install li {
   list-style-type: disc;
   margin-left: 20px; }
 #install #demo {
-  padding: 50px 0; }
-  #install #demo input {
-    width: 50%;
+  color: #fff;
+  padding: 50px; }
+  #install #demo input[type=text] {
+    border-bottom: 1px solid #fff;
     font-size: 30px; }
+  #install #demo .input-field {
+    width: 75%;
+    margin: auto; }
+    #install #demo .input-field label {
+      color: #fff;
+      text-align: left;
+      opacity: 0.5; }
 
 footer .footer-copyright {
   text-align: center; }
