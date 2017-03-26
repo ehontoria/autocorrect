@@ -20,4 +20,7 @@ body {
   .button input[type=checkbox] {
     float: left; }
 
+.share {
+  padding-bottom: 10px; }
+
 /*# sourceMappingURL=popup.css.map */
