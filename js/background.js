@@ -16,8 +16,8 @@ initIsActive().then(function (isActive) {
 
         chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
             console.log("hello");
-            
-            if (isActive) {
+            console.log(window.isActive);
+            if (window.isActive) {
                 var returnString = helper(message, swears, dict);
                 sendResponse(returnString);
             } else {
