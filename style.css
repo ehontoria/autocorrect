@@ -1,9 +1,39 @@
 body {
-  font-family: calibri; }
+  font-family: roboto; }
+  body h2 {
+    text-align: center; }
 
-.text {
-  padding: 20px 0; }
-  .text input[type="textarea"] {
-    height: 40px; }
+nav ul.right {
+  padding-right: 20px; }
+nav a.brand-logo {
+  padding: 0 20px; }
+
+.row {
+  margin-bottom: 0px; }
+
+#titlearea {
+  text-align: center; }
+  #titlearea .col {
+    padding: 100px 0; }
+  #titlearea h1, #titlearea h2 {
+    text-align: center;
+    color: #e0f2f1; }
+
+#about .col {
+  padding-bottom: 50px; }
+
+#install .col {
+  padding-bottom: 30px; }
+#install li {
+  list-style-type: disc;
+  margin-left: 20px; }
+#install #demo {
+  padding: 50px 0; }
+  #install #demo input {
+    width: 50%;
+    font-size: 30px; }
+
+footer .footer-copyright {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

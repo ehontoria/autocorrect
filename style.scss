@@ -1,11 +1,66 @@
 body {
-    font-family:calibri;
+    font-family:roboto;
+    
+    h2 {
+        text-align:center;
+    }
 }
 
-.text {
-    padding:20px 0;
+nav {
+    ul.right {
+        padding-right:20px;
+    }
     
-    input[type="textarea"] {
-        height:40px;
+    a.brand-logo {
+        padding:0 20px;
+    }
+}
+
+.row {
+    margin-bottom:0px;
+}
+
+#titlearea {
+    text-align:center;
+    
+    .col  {
+        padding:100px 0;
+    }
+    
+    h1, h2 {
+        text-align:center;
+        color:#e0f2f1;
+    }
+}
+
+#about {
+    .col {
+        padding-bottom:50px;
+    }
+}
+
+#install {
+    .col {
+        padding-bottom:30px;
+    }
+    
+    li {
+        list-style-type:disc;
+        margin-left:20px;
+    }
+    
+    #demo {
+        padding:50px 0;
+        
+        input {
+            width:50%;
+            font-size:30px;
+        }
+    }
+}
+
+footer {
+    .footer-copyright {
+        text-align:center;
     }
 }

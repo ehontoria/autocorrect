@@ -10,3 +10,6 @@ gen
 
 style/.sass-cache
 style/popup.css.map
+
+.sass-cache
+style.css.map
