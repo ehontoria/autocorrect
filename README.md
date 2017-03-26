@@ -10,4 +10,4 @@ To install:
 * Go to [chrome://extensions/](chrome://extensions/) and enable developer mode
 * Select "Load unpacked extension" and navigate to the download location
 * Open the extension in the Chrome menu and make sure "Turn on autocorrect" is checked
-* Try it out on any site with input text areas, like [here](https://github.com/hontoriae/autocorrect)
+* Try it out on any site with input text areas, like [here](https://hontoriae.github.io/autocorrect/)
